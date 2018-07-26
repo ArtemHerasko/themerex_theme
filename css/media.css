@@ -1,0 +1,152 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+	
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+	.header-widget-left,
+	.header-widget-right {
+		text-align: center;
+	}
+	.page-template-page_no_sidebear .header-wrap .site-branding:before{
+		display: none;
+	}
+	.header-wrap .site-branding{
+		padding-bottom: 30px;
+	}
+	.cart_detail{
+		width: 95%;
+		min-width: 0;
+		left: 10px;
+	}
+	.page-template-page_no_sidebear .page-wrapper {
+		margin: 0 0px;
+	}
+	.page-template-page_no_sidebear div[data-vc-full-width="true"] {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	a.vc_themerex_button{
+		font-size: 13px !important;
+		padding: 20px !important;
+	}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+	body h2{
+		font-size: 28px;
+	}
+	.vc_grid.vc_row.vc_grid-gutter-30px .vc_pageable-slide-wrapper {
+		margin-right: 0px !important;
+	}
+	.vc_grid.vc_row.vc_grid-gutter-30px .vc_grid-item{
+		padding-left: 30px;
+	}
+	.main-menu-wrap{
+		height: auto;
+		min-height: 56px;
+	}
+	.main-navigation li{
+		float: none;
+	}
+	.main-navigation{
+		display: block;
+	}
+	.main-navigation li:after,
+	.main-navigation li:last-child:after {
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 1px;
+		display: block;
+	}
+	.main-navigation li:first-child:after{
+		display: none;
+	}
+	.menu-main-menu-container ul{
+		padding: 56px 0;
+	}
+	.menu-main-menu-container ul li a span.visuallyhidden{
+		position: relative;
+	}
+	.main-navigation ul ul {
+		box-shadow: none;
+		float: inherit;
+		position: relative;
+		top: 100%;
+		padding: 0;
+		margin-left: 30px;
+		left: 0;
+		z-index: 99999;
+		opacity: 1;
+		visibility: visible;
+		background: inherit;
+	}
+	.main-navigation ul ul li{
+		list-style-type: circle;
+	}
+	.wpb_content_element{
+		text-align: center;
+	}
+	div.vc_themerex_button-wrap{
+		text-align: center;
+	}
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+	/**/
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	
+	
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.container {
+		max-width: 1170px;
+	}
+}
