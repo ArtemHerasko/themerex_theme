@@ -1,6 +1,8 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
-	
+	.services_img .vc_single_image-wrapper{
+		width: 80%;
+	}
 }
 
 
@@ -96,13 +98,36 @@
 	div.vc_themerex_button-wrap{
 		text-align: center;
 	}
+	.services_left_column,
+	.services_right_column{
+		width: 50% !important;
+		float: left;
+	}
+	.services_left_column .vc_column-inner .vc_column-inner,
+	.services_right_column .vc_column-inner .vc_column-inner {
+		padding: 0 30px 0 80px;
+	}
+	.services_left_column .vc_column-inner .vc_column-inner p.vc_custom_heading,
+	.services_right_column .vc_column-inner .vc_column-inner p.vc_custom_heading{
+		right: inherit;
+		left: 20px;
+	}
+	.services_left_column .vc_column-inner .vc_column-inner h3,
+	.services_left_column .vc_column-inner .vc_column-inner p{
+		text-align: left !important;
+	}
+	.services_left_column .vc_column-inner .vc_column-inner .vc_separator{
+		margin-left: 0;
+	}
 
 }
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-
+	.services_left_column, .services_right_column {
+		width: 100% !important;
+	}
 }
 
 

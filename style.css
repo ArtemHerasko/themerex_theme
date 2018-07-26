@@ -89,6 +89,7 @@ a:hover{
 
 .page-template-page_no_sidebear .page-wrapper{
 	margin: 0 50px;
+	overflow: hidden;
 }
 
 .page-template-page_no_sidebear div[data-vc-full-width="true"]{
@@ -1217,4 +1218,22 @@ Home Menu  Item Grid
 	opacity: 1;
 }
 
-
+/*--------------------------------------------------------------
+Home Services
+--------------------------------------------------------------*/
+.services_left_column .vc_column-inner .vc_column-inner{
+	padding: 0 40px 0 0;
+}
+.services_left_column .vc_column-inner .vc_column-inner p.vc_custom_heading{
+	position: absolute;
+	top: 0;
+	right: -25px;
+}
+.services_right_column .vc_column-inner .vc_column-inner{
+	padding: 0 0px 0 40px;
+}
+.services_right_column .vc_column-inner .vc_column-inner p.vc_custom_heading{
+	position: absolute;
+	top: 0;
+	left: -25px;
+}
