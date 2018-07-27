@@ -119,6 +119,11 @@
 	.services_left_column .vc_column-inner .vc_column-inner .vc_separator{
 		margin-left: 0;
 	}
+	div.strong-view.bold .testimonial-content p {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 0px 20px 20px;
+	}
 
 }
 

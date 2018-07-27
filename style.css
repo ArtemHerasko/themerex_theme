@@ -1237,3 +1237,70 @@ Home Services
 	top: 0;
 	left: -25px;
 }
+
+/*--------------------------------------------------------------
+Home Testimonials
+--------------------------------------------------------------*/
+div.strong-view.bold .testimonial-image img{
+	box-shadow: none;
+	margin: -70px auto 20px;
+	border: 8px solid #f2f1ec;
+	border-radius: 100%;
+}
+.strong-view.bold div {
+	overflow: visible !important;
+}
+div.strong-view.bold .testimonial-content p{
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 33px;
+	color: #808369;
+	padding: 0px 120px 20px;
+}
+div.strong-view.bold.controls-type-sides .testimonial-inner{
+	padding-bottom: 0;
+}
+div.strong-view.bold .testimonial-client{
+	padding: 28px 0;
+	background: radial-gradient(ellipse at top, rgba(33,33,33,0.04) 0%, rgba(255,255,255,0) 75%);
+	margin-top: 40px;
+}
+div.strong-view.controls-style-buttons .wpmslider-start, 
+div.strong-view.controls-style-buttons .wpmslider-stop, 
+div.strong-view.controls-style-buttons .wpmslider-next, 
+div.strong-view.controls-style-buttons .wpmslider-prev {
+	font-family: FontAwesome;
+	display: inline-block;
+	color: #808369;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 60px;
+	background: #f2f1ec;
+	width: 60px;
+	border-radius: 100%;
+	height: 60px;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+div.strong-view.controls-style-buttons .wpmslider-prev:before {
+	content: "\f104";
+	left: 8px;
+	position: relative;
+}
+div.strong-view.controls-style-buttons .wpmslider-next:before {
+	content: "\f105";
+	right: 8px;
+	position: relative;
+}
+div.strong-view.bold .testimonial-name {
+	font-weight: 400;
+	font-size: 14px;
+	color: #929292;
+	text-transform: capitalize;
+}
+div.strong-view.controls-type-sides .wpmslider-prev {
+	left: -35px;
+}
+div.strong-view.controls-type-sides .wpmslider-next {
+	right: -35px;
+}
