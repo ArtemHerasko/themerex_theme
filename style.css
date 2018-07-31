@@ -622,7 +622,23 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0;
+	position: relative;
+}
+blockquote p {
+	position: relative;
+	z-index: 2;
+}
+blockquote:after{
+	content: "“";
+	position: absolute;
+	top: 70px;
+	left: -17px;
+	z-index: 0;
+	font-size: 180px;
+	line-height: 0;
+	color: #808369;
+	opacity: 0.2;
 }
 
 address {
@@ -1164,8 +1180,8 @@ Custom Button
 /*--------------------------------------------------------------
 Our Company Section
 --------------------------------------------------------------*/
-#our_company{
-	overflow: visible;
+.section_overvlow_visible{
+	overflow: visible !important;
 }
 
 /*--------------------------------------------------------------
@@ -1303,4 +1319,23 @@ div.strong-view.controls-type-sides .wpmslider-prev {
 }
 div.strong-view.controls-type-sides .wpmslider-next {
 	right: -35px;
+}
+
+/*--------------------------------------------------------------
+Home Blog
+--------------------------------------------------------------*/
+.blog-item-wrapper .vc_gitem-post-data-source-post_date,
+.blog-item-wrapper .vc_gitem-post-data-source-post_title,
+.blog-item-wrapper .vc_separator{
+	position: relative;
+}
+.blog-item-wrapper .vc_gitem-post-data-source-post_date{
+	top: 25px;
+}
+.blog-item-wrapper .vc_gitem-post-data-source-post_title,
+.blog-item-wrapper .vc_separator{
+	top: 10px;
+}
+.blog-item-wrapper .vc_gitem-row-position-top{
+	z-index: 2;
 }
