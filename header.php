@@ -76,12 +76,12 @@
 					</div>
 
 					<div class="col-lg-2">
-							<?php if ( is_active_sidebar( 'header_widget_right' ) ) : ?>
-								<div class="header-widget-right" >
-									<?php dynamic_sidebar( 'header_widget_right' ); ?>
-								</div><!-- #Right widget area  -->
-							<?php endif; ?>
-						</div>
+						<?php if ( is_active_sidebar( 'header_widget_right' ) ) : ?>
+							<div class="header-widget-right" >
+								<?php dynamic_sidebar( 'header_widget_right' ); ?>
+							</div><!-- #Right widget area  -->
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
 

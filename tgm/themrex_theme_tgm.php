@@ -71,7 +71,7 @@ function my_theme_register_required_plugins() {
 			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
-			array(
+		array(
 			'name'               => 'Slider Revolution', // The plugin name.
 			'slug'               => 'revslider', // The plugin slug (typically the folder name).
 			'source'             => get_stylesheet_directory() . '/lib/plugins/revslider.zip', // The plugin source.
@@ -109,6 +109,16 @@ function my_theme_register_required_plugins() {
 			'name'      => 'One Click Demo Import',
 			'slug'      => 'one-click-demo-import',
 			'required'  => false,
+		),
+		array(
+			'name'      => 'Livemesh Addons for WPBakery Page Builder',
+			'slug'      => 'addons-for-visual-composer',
+			'required'  => true,
+		),
+		array(
+			'name'      => 'Strong Testimonials',
+			'slug'      => 'strong-testimonials',
+			'required'  => true,
 		),
 	);
 
@@ -211,5 +221,5 @@ function my_theme_register_required_plugins() {
 		*/
 	);
 
-	tgmpa( $plugins, $config );
+tgmpa( $plugins, $config );
 }

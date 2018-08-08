@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="col-12">
+<div class="col-md-12">
 	<?php if ( is_active_sidebar( 'footer_widget_one' ) ) : ?>
 		<div class="footer-widget-one" >
 			<?php dynamic_sidebar( 'footer_widget_one' ); ?>

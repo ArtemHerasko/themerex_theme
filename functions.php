@@ -223,7 +223,7 @@ function themerex_theme_scripts() {
 	//Add Custom JS
 	wp_enqueue_script( 'Custom js', get_template_directory_uri() . '/js/custom.js');
 	//Add Font-Awesome
-	wp_enqueue_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 
 	//Add Bootstrap 4 Grid 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap-grid.css');

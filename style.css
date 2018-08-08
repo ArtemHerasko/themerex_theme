@@ -90,6 +90,7 @@ a:hover{
 .page-template-page_no_sidebear .page-wrapper{
 	margin: 0 50px;
 	overflow: hidden;
+	position: relative;
 }
 
 .page-template-page_no_sidebear div[data-vc-full-width="true"]{
@@ -106,7 +107,22 @@ Header Styles
 	background-color: #f3f1ec;
 	height:56px;
 	line-height: 56px;
-	position: relative;
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.main-menu-wrap.fixed{
+	position: fixed;
+	top: 0;
+	opacity: 1 !important;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.main-menu-wrap.opacity{
+	opacity: 0;
+	width: calc(100% - 100px);
 }
 
 .main-navigation {
@@ -249,7 +265,7 @@ Header Styles
 }
 /* Header styles */
 .header-wrap{
-	margin-top: 52px;
+	margin-top: 108px;
 }
 .header-wrap p,
 .site-footer p{
@@ -299,6 +315,69 @@ Footer styles
 .sub-footer a:hover{
 	color: #434343;
 }
+.page-template-page_no_sidebear .scroll-to-top{
+	text-align: center;
+	position: relative;
+	top: -72px;
+	height: 65px;
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+.page-template-page_no_sidebear .scroll-to-top a{
+	position: absolute;
+	left: calc(50% - 59px);
+	z-index: 13;
+	background-color: rgb(255, 255, 255);
+	border-radius: 100% 100% 0px 0px;
+	visibility: inherit;
+	border-width: 0px;
+	height: 118px;
+	width: 118px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #808369;
+	line-height: 117px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.page-template-page_no_sidebear .scroll-to-top a:hover{
+	color: #ffb18b;
+}
+.page-template-page_no_sidebear .scroll-to-top a i{
+	position: absolute;
+	top: 25px;
+	left: calc(50% - 5px);
+	font-size: 18px;
+}
+.menu-social-links-footer-container ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.menu-social-links-footer-container ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 5px;
+
+}
+.menu-social-links-footer-container ul li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #ffffff;
+	background: #a7a99a;
+	line-height: 42px;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	display: block;
+}
+.menu-social-links-footer-container ul li a:hover{
+	background-color: #ffb18b;
+}
+#footer .menu-social-links-footer-container{
+	padding: 45px 0 20px;
+}
+
 
 /* Sections
 ========================================================================== */
@@ -816,7 +895,8 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: #434343;
+	outline: 2px solid #808369;
 }
 
 select {
@@ -1298,12 +1378,12 @@ div.strong-view.controls-style-buttons .wpmslider-prev {
 	text-align: center;
 	transition: all 0.2s ease;
 }
-div.strong-view.controls-style-buttons .wpmslider-prev:before {
+div.strong-view.controls-style-buttons:not(.rtl) .wpmslider-prev:before {
 	content: "\f104";
 	left: 8px;
 	position: relative;
 }
-div.strong-view.controls-style-buttons .wpmslider-next:before {
+div.strong-view.controls-style-buttons:not(.rtl) .wpmslider-next:before {
 	content: "\f105";
 	right: 8px;
 	position: relative;
@@ -1314,10 +1394,10 @@ div.strong-view.bold .testimonial-name {
 	color: #929292;
 	text-transform: capitalize;
 }
-div.strong-view.controls-type-sides .wpmslider-prev {
+div.strong-view.controls-type-sides:not(.rtl) .wpmslider-prev {
 	left: -35px;
 }
-div.strong-view.controls-type-sides .wpmslider-next {
+div.strong-view.controls-type-sides:not(.rtl) .wpmslider-next {
 	right: -35px;
 }
 
@@ -1338,4 +1418,79 @@ Home Blog
 }
 .blog-item-wrapper .vc_gitem-row-position-top{
 	z-index: 2;
+}
+
+/*--------------------------------------------------------------
+Home Team
+--------------------------------------------------------------*/
+.lvca-team-members .lvca-team-member .lvca-team-member-text .lvca-title {
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: 0px;
+	font-weight: 700;
+	color: #808369;
+	text-transform: capitalize;
+	clear: none;
+	margin-top: 0;
+	margin-bottom: 5px !important;
+}
+.lvca-team-members .lvca-team-member .lvca-team-member-text .lvca-team-member-position {
+	font-size: 14px;
+	line-height: 24px;
+	font-style: normal;
+	color: #929292;
+	margin-bottom: 10px;
+}
+.lvca-team-members.lvca-style1 .lvca-team-member .lvca-image-wrapper img{
+	margin: 0 auto 35px;
+}
+
+/*--------------------------------------------------------------
+Home Contact us
+--------------------------------------------------------------*/
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea{
+	color: #808369;
+	border: 0;
+	border-radius: 0px;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 22px 30px 22px 47px;
+	font-weight: 700;
+	line-height: 21px;
+	width: 100%;
+}
+.wpcf7-form-control-wrap input{
+	margin-bottom: 30px;
+}
+.wpcf7-form-control-wrap textarea{
+	margin-bottom: 50px;
+	resize: none;
+	max-height: 210px;
+}
+.wpcf7-form{
+	text-align: center;
+}
+.wpcf7-form-control.wpcf7-submit{
+	background-color: #ffb18b;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 25px 55px;
+	text-transform: uppercase;
+	border: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.wpcf7-form-control.wpcf7-submit:hover{
+	background-color: #ffa375;
+	cursor: pointer;
+}
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+	margin-top: -30px;
+	text-align: left;
 }

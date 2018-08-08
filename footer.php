@@ -11,12 +11,14 @@
 
 ?>
 
-</div><!-- #content -->
+
 
 
 <footer id="footer" class="site-footer" style="background:<?php echo get_theme_mod( 'themerex_theme_new_setting_name' ); ?>;">
-
-	<div class="container">
+	<div class="scroll-to-top">
+		<a href="#"><i class="fa fa-angle-up"></i>TOP</a>
+	</div>
+	<div class="container footer-content">
 		<div class="row">
 			<?php 
 			$part = get_theme_mod( 'themerex_theme_footer_layout_setting');
@@ -39,7 +41,9 @@
 			</div>
 		</div>
 	</div>
+
 </footer><!-- #sub-footer -->
+</div><!-- #content -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
