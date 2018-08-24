@@ -68,16 +68,17 @@ Main Styles
 }
 
 a {
-	color: royalblue;
+	color: #808369;
 	transition: all 0.3s;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: #808369;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #ffb18b;
 }
 
 a:hover, a:active,a:focus {
@@ -117,12 +118,12 @@ Header Styles
 .main-menu-wrap.fixed{
 	position: fixed;
 	top: 0;
+	left: 0;
 	opacity: 1 !important;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
 }
 .main-menu-wrap.opacity{
 	opacity: 0;
-	width: calc(100% - 100px);
 }
 
 .main-navigation {
@@ -209,6 +210,9 @@ Header Styles
 }
 .main-navigation .main-menu-home a{
 	color: #434343;
+}
+.menu-home-item-wrapper.vc_gitem-zone-a .vc_gitem-zone-mini{
+	padding: initial;
 }
 
 /* Small menu. */
@@ -326,6 +330,8 @@ Footer styles
 .page-template-page_no_sidebear .scroll-to-top a{
 	position: absolute;
 	left: calc(50% - 59px);
+	right: inherit;
+	bottom: inherit;
 	z-index: 13;
 	background-color: rgb(255, 255, 255);
 	border-radius: 100% 100% 0px 0px;
@@ -339,15 +345,22 @@ Footer styles
 	line-height: 117px;
 	text-decoration: none;
 	font-weight: 700;
+	letter-spacing: 2px;
 }
 .page-template-page_no_sidebear .scroll-to-top a:hover{
 	color: #ffb18b;
 }
 .page-template-page_no_sidebear .scroll-to-top a i{
-	position: absolute;
-	top: 25px;
-	left: calc(50% - 5px);
-	font-size: 18px;
+	    color: inherit;
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 7px);
+    font-size: 18px;
+    background: inherit;
+    padding: 0;
+}
+.page-template-page_no_sidebear .scroll-to-top a i:hover{
+	background: inherit;
 }
 .menu-social-links-footer-container ul{
 	margin: 0;
@@ -376,6 +389,16 @@ Footer styles
 }
 #footer .menu-social-links-footer-container{
 	padding: 45px 0 20px;
+}
+.site-footer{
+	padding-top: 50px;
+	margin-top: 50px;
+	border-top: 2px solid #f3f1ec;
+}
+.page-template-page_no_sidebear .site-footer{
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 
@@ -783,7 +806,8 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0;
+	padding: 0 20px;
 }
 
 ul {
@@ -837,7 +861,9 @@ input[type="submit"] {
 	font-size: 14px;
 	text-transform: uppercase;
 	background-color: #ffb18b;
-	padding: 25px 50px; 
+	border: none;
+	color: #fff;
+	padding: 10px 30px; 
 }
 
 button:hover,
@@ -873,10 +899,12 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	border: 1px solid #808369;
+	color: #808369;
+	border-radius: 0px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 input[type="text"]:focus,
@@ -1007,7 +1035,7 @@ textarea {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0 0 2.5em;
 	/* Make sure select elements fit in widgets. */
 }
 
@@ -1236,6 +1264,10 @@ div.welcome-home-item-wrapper .bottom-icon p i{
 	height: 84px;
 	top: 51px;
 	line-height: 58px;
+	z-index: 200;
+}
+div.vc_gitem-zone .vc-zone-link{
+	z-index: 205;
 }
 
 /*--------------------------------------------------------------
@@ -1245,6 +1277,7 @@ Custom Button
 	text-decoration: none;
 	font-weight: 700;
 	display: inline-block;
+	letter-spacing: 2px;
 }
 .vc_themerex_button:hover{
 	
@@ -1260,9 +1293,11 @@ Custom Button
 /*--------------------------------------------------------------
 Our Company Section
 --------------------------------------------------------------*/
-.section_overvlow_visible{
+.vc_section.section_overvlow_visible{
 	overflow: visible !important;
+	background-position: 0 0 !important;
 }
+
 
 /*--------------------------------------------------------------
 Home Menu  Item Grid 
@@ -1280,8 +1315,12 @@ Home Menu  Item Grid
 	padding: 15px 15px 0
 }
 .menu-home-item-wrapper .vc_gitem-row-position-middle.vc_gitem_row .vc_gitem-col{
+	margin-top: 15px;
 	padding: 23px 10px 0;
 	background: radial-gradient(ellipse at top, rgba(33,33,33,0.04) 0%, rgba(255,255,255,0) 75%);
+}
+.menu-home-item-wrapper h2{
+	text-transform: uppercase;
 }
 .menu-home-item-wrapper .vc_gitem-row-position-middle .vc_gitem-post-data{
 	margin-bottom: 0;
@@ -1296,23 +1335,7 @@ Home Menu  Item Grid
 	height: 40px;
 	line-height: 30px;
 }
-.menu-home-item-wrapper .vc_gitem-row-position-top.vc_gitem_row figure:before{
-	content: '';
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	opacity: 0;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-.menu-home-item-wrapper:hover .vc_gitem-row-position-top.vc_gitem_row figure:before{
-	opacity: 1;
-}
+
 
 /*--------------------------------------------------------------
 Home Services
@@ -1324,6 +1347,10 @@ Home Services
 	position: absolute;
 	top: 0;
 	right: -25px;
+}
+.services_left_column .vc_column-inner .vc_column-inner h3.vc_custom_heading,
+.services_right_column .vc_column-inner .vc_column-inner h3.vc_custom_heading{
+	letter-spacing: 2px;
 }
 .services_right_column .vc_column-inner .vc_column-inner{
 	padding: 0 0px 0 40px;
@@ -1342,6 +1369,8 @@ div.strong-view.bold .testimonial-image img{
 	margin: -70px auto 20px;
 	border: 8px solid #f2f1ec;
 	border-radius: 100%;
+	width: 103px;
+	height: auto;
 }
 .strong-view.bold div {
 	overflow: visible !important;
@@ -1357,7 +1386,7 @@ div.strong-view.bold.controls-type-sides .testimonial-inner{
 	padding-bottom: 0;
 }
 div.strong-view.bold .testimonial-client{
-	padding: 28px 0;
+	padding: 25px 0;
 	background: radial-gradient(ellipse at top, rgba(33,33,33,0.04) 0%, rgba(255,255,255,0) 75%);
 	margin-top: 40px;
 }
@@ -1411,6 +1440,8 @@ Home Blog
 }
 .blog-item-wrapper .vc_gitem-post-data-source-post_date{
 	top: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .blog-item-wrapper .vc_gitem-post-data-source-post_title,
 .blog-item-wrapper .vc_separator{
@@ -1458,6 +1489,7 @@ Home Contact us
 	padding: 22px 30px 22px 47px;
 	font-weight: 700;
 	line-height: 21px;
+	letter-spacing: 2px;
 	width: 100%;
 }
 .wpcf7-form-control-wrap input{
@@ -1476,6 +1508,7 @@ Home Contact us
 	color: #ffffff;
 	font-size: 14px;
 	padding: 25px 55px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	border: none;
 	-webkit-transition: all 0.3s;
@@ -1494,3 +1527,57 @@ span.wpcf7-not-valid-tip {
 	margin-top: -30px;
 	text-align: left;
 }
+
+/*--------------------------------------------------------------
+Post and page default 
+--------------------------------------------------------------*/
+aside#secondary{
+	background-color: #f3f1ec;
+	margin-top: 71px;
+	padding: 35px 25px;
+}
+.post-template-default #content,
+.page-template-default #content{
+	padding-top: 50px;
+}
+.post-template-default #content .entry-title,
+.page-template-default #content .entry-title{
+	font-size: 42px;
+	margin: 0px 0px 10px;
+}
+h2.widget-title{
+	font-size: 24px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+}
+aside#secondary input[type="search"]{
+	color: #808369;
+	border: 0px solid #ccc;
+	border-radius: 0px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 21px;
+	margin-right: -2px;
+}
+.comments-input{
+	margin-bottom: 30px;
+}
+.comments-input input{
+	width: 100%;
+}
+.scroll-to-top a{
+	position: fixed;
+	bottom: 25px;
+	right: 30px;
+	font-size: 0;
+}
+.scroll-to-top a i{
+	font-size: 20px;
+	background: #808369;
+	padding: 15px;
+	color: #fff;
+}
+.scroll-to-top a i:hover{
+	background: #a7a99a;
+}
+

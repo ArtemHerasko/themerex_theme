@@ -20,16 +20,10 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				themerex_theme_posted_on();
-				themerex_theme_posted_by();
-				?>
-			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php themerex_theme_post_thumbnail(); ?>
+
 
 	<div class="entry-content">
 		<?php
@@ -52,8 +46,4 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php themerex_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
