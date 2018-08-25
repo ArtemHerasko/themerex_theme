@@ -339,5 +339,10 @@ function vc_before_init_actions() {
 
 }
 
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+function modify_read_more_link() {
+	return '<a class="button more-link" href="' . get_permalink() . '">Read More</a>';
+}
+
 
 

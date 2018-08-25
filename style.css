@@ -351,13 +351,13 @@ Footer styles
 	color: #ffb18b;
 }
 .page-template-page_no_sidebear .scroll-to-top a i{
-	    color: inherit;
-    position: absolute;
-    top: 25px;
-    left: calc(50% - 7px);
-    font-size: 18px;
-    background: inherit;
-    padding: 0;
+	color: inherit;
+	position: absolute;
+	top: 25px;
+	left: calc(50% - 7px);
+	font-size: 18px;
+	background: inherit;
+	padding: 0;
 }
 .page-template-page_no_sidebear .scroll-to-top a i:hover{
 	background: inherit;
@@ -864,6 +864,14 @@ input[type="submit"] {
 	border: none;
 	color: #fff;
 	padding: 10px 30px; 
+}
+
+button:hover,
+.button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover{
+	background-color: #ffa375;
 }
 
 button:hover,
@@ -1531,6 +1539,9 @@ span.wpcf7-not-valid-tip {
 /*--------------------------------------------------------------
 Post and page default 
 --------------------------------------------------------------*/
+.post-thumbnail img{
+	width: 100%;
+}
 aside#secondary{
 	background-color: #f3f1ec;
 	margin-top: 71px;
@@ -1580,4 +1591,26 @@ aside#secondary input[type="search"]{
 .scroll-to-top a i:hover{
 	background: #a7a99a;
 }
+.more-link.button{
+	color: #fff;
+	display: block;
+	margin-top: 25px;
+	max-width: 140px;
+}
+.more-link.button:hover{
+	background: #ffa375;
+}
+
+/*--------------------------------------------------------------
+Page 404
+--------------------------------------------------------------*/
+.error-404{
+	text-align: center;
+	font-size: 36px;
+	padding: 100px 0;
+}
+.error-404 a{
+	color: #fff;
+}
+
 

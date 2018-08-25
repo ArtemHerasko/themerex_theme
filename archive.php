@@ -9,23 +9,26 @@
 
 get_header();
 ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+					<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+						<header class="page-header">
+							<?php
+							the_archive_title( '<h1 class="page-title">', '</h1>' );
+							the_archive_description( '<div class="archive-description">', '</div>' );
+							?>
+						</header><!-- .page-header -->
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+						<?php
+						/* Start the Loop */
+						while ( have_posts() ) :
+							the_post();
 
 				/*
 				 * Include the Post-Type-specific template for the content.
@@ -45,9 +48,14 @@ get_header();
 		endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
+</div>
 
-<?php
-get_sidebar();
-get_footer();
+<div class="col-md-4">
+	<?php get_sidebar(); ?>
+</div>
+</div>
+</div>
+
+<?php get_footer();
