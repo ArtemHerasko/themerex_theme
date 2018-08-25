@@ -310,26 +310,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-/**
- * Import Demo Data
- */
-
-function ocdi_import_files() {
-	return array(
-		array(
-			'import_file_name'             => 'Demo Import 1',
-			'categories'                   => array( 'Category 1', 'Category 2' ),
-			'local_import_file'            => trailingslashit( get_template_directory() ) . 'ocdi/themerextheme.wordpress.xml',
-			'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'ocdi/localsite-widgets.wie',
-			'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'ocdi/themerex_theme-export.dat',
-			'import_preview_image_url'     => trailingslashit( get_template_directory() ) . 'ocdi/screenshot.png',
-			'import_notice'                => __( 'After you import this demo, you will have to setup the slider separately.', 'your-textdomain' ),
-			'preview_url'                  => 'http://www.your_domain.com/my-demo-1',
-		)
-	);
-};
-add_filter( 'pt-ocdi/import_files', 'ocdi_import_files' );
-
 
 // Add Custom Component for Visual Composer
 add_action( 'vc_before_init', 'vc_before_init_actions' );

@@ -106,13 +106,13 @@ function my_theme_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'      => 'One Click Demo Import',
-			'slug'      => 'one-click-demo-import',
-			'required'  => false,
-		),
-		array(
 			'name'      => 'Livemesh Addons for WPBakery Page Builder',
 			'slug'      => 'addons-for-visual-composer',
+			'required'  => true,
+		),
+		array(
+			'name'      => 'All-in-One WP Migration',
+			'slug'      => 'all-in-one-wp-migration',
 			'required'  => true,
 		),
 		array(

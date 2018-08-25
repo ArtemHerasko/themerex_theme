@@ -133,6 +133,10 @@
 	.page-template-page_no_sidebear .scroll-to-top{
 		margin-bottom: 0;
 	}
+	.vc_section.section_overvlow_visible{
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
 
 }
 

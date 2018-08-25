@@ -184,7 +184,7 @@ Header Styles
 	position: absolute;
 }
 
-.main-navigation li:after{
+.main-navigation #primary-menu > li:after{
 	content: '';
 	display: block;
 	position: absolute;
@@ -202,7 +202,9 @@ Header Styles
 	display: block;
 	text-decoration: none;
 }
-.main-navigation a:hover{
+.main-navigation a:hover,
+.main-navigation li.current-menu-item a,
+.main-navigation li.current-menu-parent > a{
 	color: #434343;
 }
 .main-navigation .main-menu-home{
