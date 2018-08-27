@@ -123,7 +123,7 @@
 		margin-left: 0;
 	}
 	div.strong-view.bold .testimonial-content p {
-		font-size::; 16px;
+		font-size: 16px;
 		line-height: 24px;
 		padding: 0px 20px 20px;
 	}
@@ -134,8 +134,17 @@
 		margin-bottom: 0;
 	}
 	.vc_section.section_overvlow_visible{
-		-webkit-background-size: cover;
-		background-size: cover;
+		-webkit-background-size: cover !important;
+		background-size: cover !important;
+	}
+	.blog-item-wrapper .vc_gitem-post-data-source-post_date{
+	    top: 40px;
+	}
+	.blog-item-wrapper .vc_gitem-post-data-source-post_title, .blog-item-wrapper .vc_separator{
+	    top: 20px;
+	}
+	#our_team .vc_sep_pos_align_left{
+	    margin: 0 auto;
 	}
 
 }
