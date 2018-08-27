@@ -272,6 +272,7 @@ function themerex_theme_footer_options( $wp_customize ) {
 
 	$wp_customize->add_setting( 'themerex_theme_new_setting_name' , array(
 		'transport' => 'refresh',
+		'sanitize_callback' => 'esc_attr',
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
@@ -283,6 +284,7 @@ function themerex_theme_footer_options( $wp_customize ) {
 	$wp_customize->add_setting( 'themerex_theme_footer_layout_setting' , array(
 		'default'   => 'value1',
 		'transport' => 'refresh',
+		'sanitize_callback' => 'esc_attr',
 	) );
 
 	$wp_customize->add_control( 'custom_theme_css', array(

@@ -22,11 +22,11 @@ class WooCommerce_Widget_DropdownCart extends WP_Widget {
         /* Widget settings. */
         $widget_options = array(
             'classname' => 'widget_shopping_mini_cart dropdown-cart',
-            'description' => __( "Display the cart content", 'woocommerce-ddc' )
+            'description' => __( "Display the cart content", 'themerex_theme' )
         );
 
         /* Create the widget. */
-        parent::__construct( 'widget_shopping_mini_cart', __( 'WooCommerce Dropdown Cart', 'woocommerce-ddc' ), $widget_options );
+        parent::__construct( 'widget_shopping_mini_cart', __( 'WooCommerce Dropdown Cart', 'themerex_theme' ), $widget_options );
     }
 
 
@@ -55,8 +55,8 @@ class WooCommerce_Widget_DropdownCart extends WP_Widget {
 
         $cart_contents_count = $woocommerce->cart->get_cart_contents_count();
 
-        $item_text = __('item', 'woocommerce-ddc');
-        $items_text = __('items', 'woocommerce-ddc');
+        $item_text = __('item', 'themerex_theme');
+        $items_text = __('items', 'themerex_theme');
 
         ?>
         <div class="widget_shopping_mini_cart_content" id="<?php echo $this->id ?>-content">
@@ -110,7 +110,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
                         echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
                             '<a href="%s" class="remove remove_from_cart_button" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
                             esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-                            __( 'Remove this item', 'woocommerce' ),
+                            __( 'Remove this item', 'themerex_theme' ),
                             esc_attr( $product_id ),
                             esc_attr( $cart_item_key ),
                             esc_attr( $_product->get_sku() )
@@ -135,7 +135,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
         ?>
     </ul>
 
-    <p class="woocommerce-mini-cart__total total"><strong><?php _e( 'Subtotal', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+    <p class="woocommerce-mini-cart__total total"><strong><?php _e( 'Subtotal', 'themerex_theme' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
     <?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
@@ -143,7 +143,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 <?php else : ?>
 
-    <p class="woocommerce-mini-cart__empty-message"><?php _e( 'No products in the cart.', 'woocommerce' ); ?></p>
+    <p class="woocommerce-mini-cart__empty-message"><?php _e( 'No products in the cart.', 'themerex_theme' ); ?></p>
 
 <?php endif; ?>
 
@@ -199,19 +199,19 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
         $hide_if_empty = empty( $instance['hide_if_empty'] ) ? 0 : 1;
         $show_on_checkout = empty( $instance['show_on_checkout'] ) ? 0 : 1;
         ?>
-        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'woocommerce-ddc') ?></label>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'themerex_theme') ?></label>
             <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php if (isset ( $instance['title'])) {echo esc_attr( $instance['title'] );} ?>" /></p>
 
         <p><input type="checkbox" class="checkbox" id="<?php echo esc_attr( $this->get_field_id('hide_if_empty') ); ?>" name="<?php echo esc_attr( $this->get_field_name('hide_if_empty') ); ?>"<?php checked( $hide_if_empty ); ?> />
-            <label for="<?php echo $this->get_field_id('hide_if_empty'); ?>"><?php _e( 'Hide if cart is empty', 'woocommerce-ddc' ); ?></label></p>
+            <label for="<?php echo $this->get_field_id('hide_if_empty'); ?>"><?php _e( 'Hide if cart is empty', 'themerex_theme' ); ?></label></p>
 
         <p><input type="checkbox" class="checkbox" id="<?php echo esc_attr( $this->get_field_id('show_on_checkout') ); ?>" name="<?php echo esc_attr( $this->get_field_name('show_on_checkout') ); ?>"<?php checked( $show_on_checkout ); ?> />
-            <label for="<?php echo $this->get_field_id('show_on_checkout'); ?>"><?php _e( 'Show this widget on cart/checkout pages', 'woocommerce-ddc' ); ?></label></p>
+            <label for="<?php echo $this->get_field_id('show_on_checkout'); ?>"><?php _e( 'Show this widget on cart/checkout pages', 'themerex_theme' ); ?></label></p>
         <p>
-            <label for="<?php echo $this->get_field_id('popup_align') ?>"><?php _e('Popup align:', 'woocommerce-ddc') ?></label>
+            <label for="<?php echo $this->get_field_id('popup_align') ?>"><?php _e('Popup align:', 'themerex_theme') ?></label>
             <select name="<?php echo $this->get_field_name('popup_align') ?>" id="<?php echo $this->get_field_id('popup_align') ?>" class="widefat">
-                <option value="left" <?php selected('left', $instance['popup_align']) ?>><?php _e('Left', 'woocommerce-ddc') ?></option>
-                <option value="right" <?php selected('right', $instance['popup_align']) ?>><?php _e('Right', 'woocommerce-ddc') ?></option>
+                <option value="left" <?php selected('left', $instance['popup_align']) ?>><?php _e('Left', 'themerex_theme') ?></option>
+                <option value="right" <?php selected('right', $instance['popup_align']) ?>><?php _e('Right', 'themerex_theme') ?></option>
             </select>
         </p>
     <?php
