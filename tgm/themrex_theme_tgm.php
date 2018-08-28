@@ -74,7 +74,7 @@ function my_theme_register_required_plugins() {
 		),
 		array(
 			'name'         => 'Themerex VC Elements', // The plugin name.
-			'slug'         => 'themerex-vc-elements.zip', // The plugin slug (typically the folder name).
+			'slug'         => 'themerex-vc-elements', // The plugin slug (typically the folder name).
 			'source'       => 'http://gerasko2.bget.ru/themerex-plugin/themerex-vc-elements.zip', // The plugin source.
 			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
 		),
