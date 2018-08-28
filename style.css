@@ -1246,6 +1246,12 @@ Woocommerce
 .woocommerce-mini-cart a{
 	color: #808369;
 }
+.woocommerce .col2-set .col-1, 
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2, 
+.woocommerce-page .col2-set .col-2{
+	max-width: 100%;
+}
 
 /*--------------------------------------------------------------
 Home welcom-item grid 

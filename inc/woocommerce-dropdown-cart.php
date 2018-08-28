@@ -62,7 +62,7 @@ class WooCommerce_Widget_DropdownCart extends WP_Widget {
         <div class="widget_shopping_mini_cart_content" id="<?php echo $this->id ?>-content">
             <?php if ( !$hide_if_empty || $cart_contents_count > 0 ) : ?>
                 <div class="dropdown-cart-button <?php echo $hide_if_empty ? 'hide_dropdown_cart_widget_if_empty' : '' ?>" style="<?php echo $hide_if_empty && sizeof( $woocommerce->cart->get_cart() ) == 0 ? "display:none;":"" ?>">
-                    <a href="#" class="dropdown-total"><?php echo $cart_contents_count.' '._n($item_text, $items_text, $cart_contents_count) ?> - <?php echo $woocommerce->cart->get_cart_subtotal(); ?></a>
+                    <a href="#" class="dropdown-total"><?php echo $cart_contents_count.' '($item_text, $items_text, $cart_contents_count) ?> - <?php echo $woocommerce->cart->get_cart_subtotal(); ?></a>
                     <div class="dropdown dropdown-<?php echo $popup_align ?>">
                         <?php
 /**
