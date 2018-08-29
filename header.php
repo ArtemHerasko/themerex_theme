@@ -55,7 +55,7 @@
 						</div>
 
 						<div class="col-lg-8">
-							<div class="site-branding">
+							<div itemscope class="site-branding">
 								<?php
 								the_custom_logo();
 								if ( is_front_page() && is_home() ) :

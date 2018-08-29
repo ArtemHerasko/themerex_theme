@@ -1556,6 +1556,15 @@ span.wpcf7-not-valid-tip {
 }
 
 /*--------------------------------------------------------------
+Portfolio
+--------------------------------------------------------------*/
+a.vc_btn3.vc_btn3-color-warning, 
+a.vc_btn3.vc_btn3-color-warning.vc_btn3-style-flat{
+	background-color: #ffb18b;
+}
+
+
+/*--------------------------------------------------------------
 Post and page default 
 --------------------------------------------------------------*/
 .post-thumbnail img{
